@@ -16,7 +16,14 @@
                     colors: {
                         clifford: '#da373d',
                         'primary-color': '#B68C5A',
-                    }
+                    },
+                    backgroundImage: {
+                        'banner-bg': "url('./images/banner.png')",
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins'],
+                        garamond: ['EB Garamond'],
+                    },
                 }
             }
         }
@@ -24,10 +31,13 @@
     <!-- google font: poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
 
     <style>
-        body{
+        body {
+            font-family: 'EB Garamond', serif;
             font-family: 'Poppins', sans-serif;
         }
     </style>
@@ -37,7 +47,7 @@
 <body>
     <header class="max-w-screen-lg mx-auto">
         <!-- nav section -->
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 py-5">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -138,16 +148,31 @@
                             </ul>
                         </details>
                     </li>
-                    
+
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn bg-primary-color normal-case text-white w-3/4 text-xs md:text-base lg:text-lg">Free Consultation</a>
+                <a class="btn bg-primary-color normal-case text-white w-3/4 text-xs md:text-base lg:text-lg">Free
+                    Consultation</a>
             </div>
         </div>
     </header>
     <main>
-        
+        <!-- banner section -->
+        <div class="max-w-screen-lg mx-auto">
+            <div class="hero min-h-[calc(100vh-134px)] bg-banner-bg">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-2xl">
+                        <h1 class="mb-5 text-7xl font-garamond font-bold">We Provide Effective Legal Solutions</h1>
+                        <p class="mb-5 text-base">There are many variations of passages of Lorem Ipsum available, but the majority
+                            have suffered alteration in some form, by injected humour.</p>
+                        <input class="font-light text-xl py-4 pl-5 pr-60 rounded-xl mr-3" type="search" name="search" id="search" placeholder="Search your services">
+                        <button class="bg-primary-color font-semibold text-xl px-10 py-4 rounded-xl" type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 
