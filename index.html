@@ -1,22 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Solution</title>
+    <!-- daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#B68C5A',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- google font: poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
 </head>
+
 <body>
-    <header>
+    <header class="max-w-screen-lg mx-auto">
         <!-- nav section -->
-        <div>
-            
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li tabindex="0">
+                            <details>
+                                <summary>Services</summary>
+                                <ul class="p-2">
+                                    <li><a>Services</a></li>
+                                    <li><a>Services</a></li>
+                                    <li><a>Services</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li tabindex="0">
+                            <details>
+                                <summary>Cases</summary>
+                                <ul class="p-2">
+                                    <li><a>Cases</a></li>
+                                    <li><a>Cases</a></li>
+                                    <li><a>Cases</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li tabindex="0">
+                            <details>
+                                <summary>Blog</summary>
+                                <ul class="p-2">
+                                    <li><a>Blog</a></li>
+                                    <li><a>Blog</a></li>
+                                    <li><a>Blog</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li tabindex="0">
+                            <details>
+                                <summary>Contact Us</summary>
+                                <ul class="p-2">
+                                    <li><a>Contact Us</a></li>
+                                    <li><a>Contact Us</a></li>
+                                    <li><a>Contact Us</a></li>
+                                </ul>
+                            </details>
+                        </li>
+
+                    </ul>
+                </div>
+                <img src="images/logo2.png" alt="">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li tabindex="0">
+                        <details>
+                            <summary>Services</summary>
+                            <ul class="p-2">
+                                <li><a>Services</a></li>
+                                <li><a>Services</a></li>
+                                <li><a>Services</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li tabindex="0">
+                        <details>
+                            <summary>Cases</summary>
+                            <ul class="p-2">
+                                <li><a>Cases</a></li>
+                                <li><a>Cases</a></li>
+                                <li><a>Cases</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li tabindex="0">
+                        <details>
+                            <summary>Blog</summary>
+                            <ul class="p-2">
+                                <li><a>Blog</a></li>
+                                <li><a>Blog</a></li>
+                                <li><a>Blog</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li tabindex="0">
+                        <details>
+                            <summary>Contact Us</summary>
+                            <ul class="p-2">
+                                <li><a>Contact Us</a></li>
+                                <li><a>Contact Us</a></li>
+                                <li><a>Contact Us</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-primary-color normal-case text-white">Free Consultation</a>
+            </div>
         </div>
     </header>
     <main>
-
+        
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
